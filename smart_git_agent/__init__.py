@@ -1,0 +1,1 @@
+# Empty file to mark smart_git_agent as a Python package

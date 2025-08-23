@@ -1,0 +1,28 @@
+[project]
+name = "smart-git-agent"
+version = "1.1.1"
+description = "An intelligent Git automation tool that monitors file changes and generates AI-powered commit messages."
+authors = [
+    { name = "Sosthene Mounsambote", email = "sosthenemounsambote14@gmail.com" }
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "gitpython>=3.1.43",
+    "watchdog>=5.0.2",
+    "requests>=2.32.3",
+    "keyboard"
+]
+
+[tool.setuptools]
+packages = ["smart_git_agent"]
+
+[project.scripts]
+smart-git-agent = "smart_git_agent.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
